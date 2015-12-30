@@ -49,16 +49,16 @@ $(document).ready(function(){
 			else if (Math.abs((userGuess - theNumber))<=1) {
 				$('#feedback').html("ON FIRE!!!");
 			}
-			else if (Math.abs((userGuess - theNumber))<=5) {
+			else if (Math.abs((userGuess - theNumber))<=3) {
 				$('#feedback').html("Really Hot");
 			}
-			else if (Math.abs((userGuess - theNumber))<=10) {
+			else if (Math.abs((userGuess - theNumber))<=7) {
 				$('#feedback').html("Hot");
 			}
 			else if (Math.abs((userGuess - theNumber))<=20) {
 				$('#feedback').html("Warm");
 			}
-			else if (Math.abs((userGuess - theNumber))<=50) {
+			else if (Math.abs((userGuess - theNumber))<=40) {
 				$('#feedback').html("Cold");
 			}
 			else if (Math.abs((userGuess - theNumber))<=70) {
@@ -76,6 +76,7 @@ $(document).ready(function(){
 		$('#feedback').html("Make your Guess");
 		$('#count').html('0');
 		$('#guessList').html('');
+		makeNumber ()
 	}
 
 
